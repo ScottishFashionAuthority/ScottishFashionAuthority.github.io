@@ -192,68 +192,6 @@
       padding-left: 1.74em; /* balance tracking */
     }
 
-    /* ---------- Notify form ---------- */
-    form {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      justify-content: center;
-      max-width: 30rem;
-      margin: 0 auto;
-    }
-    .field {
-      flex: 1 1 15rem;
-      text-align: left;
-    }
-    label {
-      display: block;
-      font-size: 0.78rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--thistle);
-      margin-bottom: 0.4rem;
-    }
-    input[type="email"] {
-      width: 100%;
-      padding: 0.85rem 1rem;
-      font: inherit;
-      font-size: 1rem;
-      color: var(--ink);
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(217,180,106,0.45);
-      border-radius: 10px;
-    }
-    input[type="email"]::placeholder { color: rgba(234,240,248,0.5); }
-    input[type="email"]:focus-visible {
-      outline: 3px solid var(--gold-bright);
-      outline-offset: 2px;
-      background: rgba(255,255,255,0.1);
-    }
-
-    button {
-      align-self: flex-end;
-      flex: 0 0 auto;
-      padding: 0.85rem 1.6rem;
-      font: inherit;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--navy-deep);
-      background: linear-gradient(180deg, var(--gold-bright), var(--gold));
-      border: 0;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: transform .18s ease, box-shadow .18s ease;
-    }
-    button:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(217,180,106,0.35); }
-    button:focus-visible { outline: 3px solid var(--gold-bright); outline-offset: 3px; }
-
-    .form-note {
-      margin-top: 0.9rem;
-      font-size: 0.82rem;
-      color: rgba(234,240,248,0.6);
-    }
-
     /* ---------- Footer ---------- */
     footer {
       flex-shrink: 0;
@@ -321,32 +259,9 @@
 
       <hr class="rule" aria-hidden="true" />
 
-      <p class="tagline">A new home for Scotland&rsquo;s finest fashion, craft and heritage — where tradition is tailored for tomorrow.</p>
+      <p class="tagline">Championing Scotland&rsquo;s fashion industry — stories, events and the connections that bring its professionals together.</p>
 
       <p class="coming">Coming Soon</p>
-
-      <!--
-        Static-friendly notify form. GitHub Pages has no backend, so this
-        opens the visitor's email client via mailto. Swap the action for a
-        form service (e.g. Formspree/Netlify) when the final host is ready.
-      -->
-      <form action="mailto:hello@scottishfashionauthority.com" method="post" enctype="text/plain" aria-labelledby="notify-heading">
-        <h2 id="notify-heading" class="visually-hidden">Be the first to know</h2>
-        <div class="field">
-          <label for="email">Get notified at launch</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="you@example.com"
-            autocomplete="email"
-            required
-            aria-required="true"
-          />
-        </div>
-        <button type="submit">Notify Me</button>
-        <p class="form-note">We&rsquo;ll only email you once, when we launch. No spam, ever.</p>
-      </form>
     </main>
   </div>
 
