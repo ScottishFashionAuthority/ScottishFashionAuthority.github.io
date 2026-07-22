@@ -1,0 +1,102 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Scottish Fashion Authority">
+  <defs>
+    <!-- Aurora / highland night background -->
+    <radialGradient id="glowHeather" cx="20%" cy="18%" r="60%">
+      <stop offset="0%" stop-color="#6b4a8c" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#6b4a8c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowNavy" cx="85%" cy="28%" r="55%">
+      <stop offset="0%" stop-color="#12294a" stop-opacity="0.85"/>
+      <stop offset="65%" stop-color="#12294a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowGold" cx="60%" cy="105%" r="70%">
+      <stop offset="0%" stop-color="#d9b46a" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#d9b46a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#0a1a2f"/>
+      <stop offset="70%" stop-color="#071324"/>
+    </linearGradient>
+    <!-- Gold title gradient -->
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="20%" stop-color="#d9b46a"/>
+      <stop offset="40%" stop-color="#f0d493"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f0d493"/>
+      <stop offset="80%" stop-color="#d9b46a"/>
+    </linearGradient>
+    <linearGradient id="goldPill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0d493"/>
+      <stop offset="100%" stop-color="#d9b46a"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background layers -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowHeather)"/>
+  <rect width="1200" height="630" fill="url(#glowNavy)"/>
+  <rect width="1200" height="630" fill="url(#glowGold)"/>
+
+  <!-- Subtle tartan weave -->
+  <g opacity="0.10">
+    <g stroke="#d9b46a" stroke-width="2">
+      <line x1="0" y1="90"  x2="1200" y2="90"/>
+      <line x1="0" y1="230" x2="1200" y2="230"/>
+      <line x1="0" y1="400" x2="1200" y2="400"/>
+      <line x1="0" y1="540" x2="1200" y2="540"/>
+      <line x1="140"  y1="0" x2="140"  y2="630"/>
+      <line x1="380"  y1="0" x2="380"  y2="630"/>
+      <line x1="820"  y1="0" x2="820"  y2="630"/>
+      <line x1="1060" y1="0" x2="1060" y2="630"/>
+    </g>
+    <g stroke="#b18fcf" stroke-width="1.5">
+      <line x1="0" y1="160" x2="1200" y2="160"/>
+      <line x1="0" y1="470" x2="1200" y2="470"/>
+      <line x1="260" y1="0" x2="260" y2="630"/>
+      <line x1="940" y1="0" x2="940" y2="630"/>
+    </g>
+  </g>
+
+  <!-- Thistle emblem (scaled from the site) -->
+  <g transform="translate(600,60) scale(1.15)" filter="url(#soft)">
+    <g fill="none" stroke="#d9b46a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(-50,0)">
+      <path d="M50 8 C46 16 42 20 42 26 M50 8 C54 16 58 20 58 26 M50 6 L50 24 M44 12 L40 22 M56 12 L60 22"/>
+      <path d="M35 40 C35 30 42 26 50 26 C58 26 65 30 65 40 C65 52 58 58 50 58 C42 58 35 52 35 40 Z" fill="#6b4a8c" fill-opacity="0.55"/>
+      <path d="M40 44 L45 40 M60 44 L55 40 M50 42 L50 50 M45 46 L48 42 M55 46 L52 42"/>
+      <path d="M50 58 L50 120"/>
+      <path d="M50 78 C38 78 30 84 26 96 C40 96 48 90 50 82 Z" fill="#3a2a54" fill-opacity="0.5"/>
+      <path d="M50 92 C62 92 70 98 74 110 C60 110 52 104 50 96 Z" fill="#3a2a54" fill-opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- Eyebrow -->
+  <text x="600" y="278" text-anchor="middle"
+        font-family="'Jost', 'Segoe UI', sans-serif" font-size="20" font-weight="500"
+        letter-spacing="8" fill="#b18fcf">EST. SCOTLAND</text>
+
+  <!-- Title -->
+  <text x="600" y="372" text-anchor="middle"
+        font-family="'Cormorant Garamond', Georgia, serif" font-size="82" font-weight="600"
+        letter-spacing="1" fill="url(#gold)">Scottish Fashion Authority</text>
+
+  <!-- Rule -->
+  <line x1="480" y1="404" x2="720" y2="404" stroke="#d9b46a" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- Tagline -->
+  <text x="600" y="454" text-anchor="middle"
+        font-family="'Cormorant Garamond', Georgia, serif" font-size="30" font-style="italic" fill="#e9eef4">
+    Championing Scotland&#8217;s fashion industry
+  </text>
+
+  <!-- Coming soon pill -->
+  <g filter="url(#soft)">
+    <rect x="474" y="500" width="252" height="52" rx="26" fill="url(#goldPill)"/>
+    <!-- x nudged left by ~half the letter-spacing to offset SVG's trailing-tracking shift -->
+    <text x="598" y="533" text-anchor="middle"
+          font-family="'Jost', 'Segoe UI', sans-serif" font-size="18" font-weight="500"
+          letter-spacing="4" fill="#0a1a2f">COMING SOON</text>
+  </g>
+</svg>
